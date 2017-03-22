@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<link href="image/dazhuan.ico" rel="shortcut icon">
+	<title>案件预判</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+    <script src='js/jquery-1.8.3.min.js'></script>
+    <script>
+        $(function () {
+            // 延迟CNZZ统计
+            var cz = document.createElement("script");
+            cz.src = "//s11.cnzz.com/z_stat.php?id=1260926539";
+            document.getElementsByTagName('body')[0].appendChild(cz);
+        });
+    </script>
+</head>
+<body>
+<header class="pre-stage">
+        <span title="摩拉云" class="header-logo logo white normal">
+            <a href="index.html"><i class="logo-s"></i></a>
+            <h1 class="hidden-text">摩拉云</h1>
+        </span>
+    <nav class="global-nav">
+        <div class="global-nav-inner">
+            <h3 class="global-nav-title clearfix">
+                <a href="javascript:;" class="global-nav-initializer  white" id="MenuMin">
+                    <span class="line top"></span>
+                    <span class="line mid"></span>
+                    <span class="line bottom"></span>
+                </a>
+                <span class="hidden-text">菜单</span>
+            </h3>
+            <ul id="menu-%e4%b8%bb%e8%8f%9c%e5%8d%95" class="global-nav-ul">
+                <li id="menu-item-51" class="global-nav-item">
+                    <a class="global-nav-link" href="index.html">摩拉云首页</a>
+                </li>
+                <li class="global-nav-item">
+                    <a class="global-nav-link" href="case.html">摩拉云产品</a>
+                </li>
+                <li id="menu-item-53" class="global-nav-item">
+                    <a class="global-nav-link" href="list_domain.html">摩拉云方案</a>
+                </li>
+                <li id="menu-item-60" class="global-nav-item">
+                    <a class="global-nav-link" href="team.html">摩拉云团队</a>
+                </li>
+                <li class="global-nav-item">
+                    <a class="global-nav-link" href="court.html">方案预测</a>
+                </li>
+                <li id="menu-item-54" class="global-nav-item">
+                    <a class="global-nav-link" href="list_news.html">摩拉云动态</a>
+                </li>
+                <li id="menu-item-50" class="global-nav-item">
+                    <a class="global-nav-link" href="aboutUs.html">关于我们</a>
+                </li>
+            </ul>
+        </div>
+        <div class="bg"></div>
+    </nav>
+</header>
+	<div class="banner">
+		<img class="lazy" src="image/molayun/banner_zyly6_s.jpg" data-original="image/molayun/banner_zyly6.jpg" />
+		<div class="banner_title">
+			<span class="banner_t_h">产品预判</span>
+			<span class="banner_t_hf">— 务实创新，追求卓越 —</span>
+		</div>
+		<a class="now_btn" href="#courtForm" id="nowGo">立即体验&nbsp;></a>
+	</div>
+	<div id="courtList"></div>
+	<div class="order_wrap" id="courtForm">
+			<!-- <img src="image/banner_zyly5.jpg" /> -->
+		<div class="order_block">
+			<span class="court_i"></span>
+			<div class="title">预约摩拉云方案预测</div>
+			<p class="error-tips"></p>
+			<div class="input_block">
+				<span class="label">您的姓名：</span>
+				<span><input type="text" name="userName" id="userName"/></span>
+			</div>
+			<div class="input_block">
+				<span class="label">手机/邮箱：</span>
+				<span><input type="text" placeholder="必填" name="userContact" id="userContact" /></span>
+			</div>
+			<div class="input_block input_type_block">
+				<span class="label">案件类型：</span>
+				<span><input type="text" disabled="disabled" /></span>
+				<select name="caseType" class="case_type_sel" id="caseType">
+					<option value="101" selected="selected">婚姻</option>
+					<option value="102">继承</option>
+					<option value="103">合同</option>
+					<option value="104">诈骗</option>
+					<option value="105">其他</option>
+				</select>
+			</div>
+			<div class="text_block">
+				<span class="label">案件说明：</span>
+				<div class="case-desc">
+				    <textarea id="caseDesc"></textarea>
+                    <p class="number-tips"><span id="lest">2000</span><span>/2000</span></p>
+				</div>
+			</div>
+			<a href="javascript:;" class="order_btn" id="orderBtn">发送申请</a>
+		</div>
+		<div class="wrap order_int_wrap">
+			<div class="order_int" id="orderInt">
+<!--
+				<p>费用说明：</p>
+				<p>1、口头预判：收费800元/份（费用不退）</p>
+				<p>2、书面预判：收费3000元/份（预判有误全部或部分退款）</p>
+				<p>3、48小时出预判结果</p>
+				<p>4、请务必留下邮箱接收预判结果</p>
+-->
+			</div>
+		</div>
+	</div>
+
+<div class="footer">
+    <div class="footer-inner clearfix">
+        <div class="footer-contact misc-info">
+            <div class="clearfix">
+                <p class="item-title">联系方式</p>
+                <div class="misc-info footer-section">
+                    <p class="footer-item">网址：www.molayun.com </p>
+                    <p class="footer-item">咨询专线：400-000-0000 </p>
+                    <p class="footer-item">地址：广州市天河区林和西路161号</p>
+                </div>
+                <div class="misc-info footer-section">
+                    <p class="footer-item">电邮：molayun@ml.com </p>
+                    <p class="footer-item">总机：020-8888-8888 </p>
+                    <p class="footer-item">邮编：510000</p>
+                </div>
+            </div>
+
+            <dl class="clearfix">
+                <dt class="misc-info">友情链接：</dt>
+                <dd class="misc-info"><a href="javascript:;">这里是友情链接</a></dd>
+                <dd class="misc-info"><a href="javascript:;">友情链接</a></dd>
+                <dd class="misc-info"><a href="javascript:;">这里是友情链接占位</a></dd>
+            </dl>
+            <p>molayun© 2016-2020 版权所有</p>
+        </div>
+
+        <div class="contact-info footer-section">
+            <p class="footer-item text-c">
+                <img src="image/molayun/qrcode.jpg" alt="">
+            </p>
+            <p class="text-c">&lt;扫码获取我们摩拉云的最新资讯&gt;</p>
+        </div>
+    </div>
+</div>
+    
+    <script src="js/jquery.lazyload.min.js"></script>
+	<script src="js/fastclick.min.js"></script>
+	<script src='js/app.js'></script>
+	<script>
+        $(function(){
+            $(".lazy").lazyload({ threshold: 200 });
+//            获取案件预判数据列表、案件预判费用说明
+            $.ajax({
+                type:"post",
+                dataType:"json",
+                url:requestUrl+"/GetProJudge",
+                success:function(data){
+                    if(data.Code==1){
+
+                        $("#orderInt").html(data.feelist);
+
+                        $.each(data.introlist,function(i){
+                            var list = data.introlist[i];
+                            var layer = "";
+                            if((i%2)!==0){
+                                layer = 'layer'
+                            }
+                            var iHtml = '<div class="'+layer+'"><div class="wrap court_wrap">'
+		+'<div class="title">'+list.ProJudgeTitle+'</div>'
+		+'<p class="content">'+list.Discript +'</p>'
+		+'<div class="state_condition">'+list.Result+'</div>'
+	+'</div></div>'
+                            $("#courtList").append(iHtml);
+                        })
+                    }
+
+                },
+                error:function (jqXHR, textStatus, errorThrown) {
+                    if(jqXHR.status==404){
+                        window.location.href='./404.html';
+                    }else if(jqXHR.status+''.indexOf('5') == 0){
+                        window.location.href = './500.html';
+                    }
+                }
+            })
+             $("#caseDesc").keyup(function(){
+                   var len = $(this).val().length;
+                   if(len > 1999){
+                    $(this).val($(this).val().substring(0,2000));
+                   }
+                   var num = 2000 - len;
+                   $("#lest").text(num);
+              });
+//            预约案件预判表单提交
+            $("#orderBtn").click(function(){
+                var userName = $("#userName").val();
+                var userContact = $("#userContact").val();
+                var caseType = $("#caseType").find("option:selected").val();
+                var caseDesc = $("#caseDesc").val();
+//                console.log(caseType);
+                if(userContact == ''){
+                    $(".error-tips").html("请输入联系方式！").show();
+                    return;
+                }
+                if(caseDesc.length>2000){
+                    $(".error-tips").html("案件说明必须少于2000字哦！").show();
+                    return;
+                }
+                $.ajax({
+                    type:'post',
+                    dataType:'json',
+                    url:requestUrl+'/SaveClient',
+                    data:{
+                        "ClientName":userName,
+                        "CellPhone":userContact,
+                        "CaseType":caseType,
+                        "CaseDiscript":caseDesc
+                    },
+                    success:function(data){
+                        if(data.Code == 1){
+                            alert("提交成功！");
+                            location.reload();
+                        }
+                    }
+                })
+            })
+
+            //SEO
+            $.ajax({
+                type: 'post',
+                url: requestUrl +'/GetSEO?PageName=221',
+                dataType: 'json',
+                success: function(data){
+                    if(data.Code == 1){
+                        var keyWords = data.model.KeyWords;
+                        var description = data.model.Description;
+                        var title = data.model.Title;
+
+                        document.title = title;
+                        $("head").append('<meta name="Keywords" content="'+ keyWords +'">');
+                        $("head").append('<meta name="description" content="'+ description +'">');
+                    }
+                    
+                    
+                }
+            });
+            /*打开二维码弹窗*/
+            $("#phoneWatch").click(function () {
+                $(".qrcode_modal").show();
+                $(".qrcode_bg").show();
+            });
+            /*关闭二维码弹窗*/
+            $(".qrcode_close").click(function () {
+                $(".qrcode_modal").hide();
+                $(".qrcode_bg").hide();
+            });
+
+   });
+    </script>
+</body>
+</html>
